@@ -1,0 +1,49 @@
+@charset "utf-8";
+.page-warp{
+	text-align: right;/*left左侧  center中间 right右侧  */
+	padding: 10px;
+}
+.page-list{
+	display: inline-block;
+	font: 13px/26px '微软雅黑';
+	white-space:nowrap;
+}
+.page-list > *{
+	display: inline-block;
+	color: #333;
+	border: 1px solid #eee;
+	min-width: 22px;
+	min-height: 26px;
+	text-align: center;
+	padding: 0 4px;
+	background: #fff;
+}
+.page-list > a:hover{
+	background: #eee;
+}
+.page-list > a.cur{
+	background: #eee;
+	color: #666;
+}
+.page-list > span{
+	border-color: #fff;
+}
+.page-list > span > em{
+	display: inline-block;
+	border: 1px solid #eee;
+	height: 24px;
+	vertical-align: top;
+	margin: 0 4px;
+}
+.page-list > span > em input{
+	width: 20px;
+	height: 24px;
+	border: 0;
+	margin: 0 4px;
+	vertical-align: top;
+}
+.page-list > span > b{
+	font-weight: bold;
+	color: #999;
+	font-family: arial
+}

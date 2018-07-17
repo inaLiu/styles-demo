@@ -1,0 +1,58 @@
+@charset "utf-8";
+body{
+	background: #fff;
+}
+.search-warp{
+	position: relative;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 4px 8px;
+	background: #fff;
+}
+.search-warp > div{
+	margin-right: 42px;
+}
+.search-warp > div > input{
+	width: 100%;
+	border: transparent;
+}
+.search-warp >  i{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #1e88e5;
+	width: 50px;
+	color:#fff;
+	line-height: 26px;
+	text-align: center;
+	cursor: pointer;
+}
+.search-warp >  i:hover{
+	background: #1565c0;
+}
+.search-warp > ul{
+	position: absolute;
+	left: 0;
+	top: 26px;
+	border:1px solid #ccc;
+	width: 99.9%;
+	max-height: 250px;
+	overflow-y: auto;
+	background: linear-gradient(white 15px, hsla(0,0%,100%,0)) 0 0 / 100% 50px,
+	            radial-gradient(at top, rgba(0,0,0,.2), transparent 70%) 0 0 / 100% 15px,
+	            linear-gradient(to top, white 15px, hsla(0,0%,100%,0)) bottom / 100% 50px,
+	            radial-gradient(at bottom, rgba(0,0,0,.2), transparent 70%) bottom / 100% 15px;
+	background-repeat: no-repeat;
+	background-attachment: local, scroll, local, scroll;
+}
+.search-warp > ul > li{
+	padding: 4px 10px;
+	cursor: pointer;
+}
+.search-warp > ul > li:hover,
+.search-warp > ul > li.cur{
+	background: #eee;
+}
+.search-warp > ul > li > a{
+	color: #666;
+}

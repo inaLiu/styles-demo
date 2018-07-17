@@ -1,0 +1,35 @@
+@charset "utf-8";
+.loading-pic{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin:-25px 0 0 -25px;
+	background: url(../images/loader.png) no-repeat 0 0;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	animation: loading 1s infinite steps(8);
+	-o-animation: loading 1s infinite steps(8);
+	-moz-animation: loading 1s infinite steps(8);
+	-webkit-animation: loading 1s infinite steps(8);
+}
+@keyframes loading{
+	to{
+		background-position: -800px 0;
+	}
+}
+@-moz-keyframes loading{
+	to{
+		background-position: -800px 0;
+	}
+}
+@-webkit-keyframes loading{
+	to{
+		background-position: -800px 0;
+	}
+}
+@-o-keyframes  loading{
+	to{
+		background-position: -800px 0;
+	}
+}

@@ -1,0 +1,313 @@
+@charset "utf-8";
+@import url(../../../iconfont/iconfont.css);
+
+
+
+/*  NO.1  */
+.inputtext{
+	position: relative;
+	width: 210px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.inputtext > i{
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-right: 1px solid #ccc;
+	padding: 0 5px;
+	margin: 2px 0;
+	line-height: 24px;
+	color: #666;
+    font-size: 18px;
+    width: 17px;
+    text-align: center;
+}
+.inputtext > i.icon-suo1{
+	font-size: 14px;
+}
+.inputtext > b{
+	display: block;
+	margin-left: 32px;
+}
+.inputtext > b > input{
+	width: 100%;
+    vertical-align: top;
+    height: 28px;
+    border: 0;
+    background: #fff;
+}
+.picinput > p{
+	float: left;
+	width: 152px;
+}
+.picinput > img{
+	border: 1px solid #ccc;
+	height: 28px;
+	float: left;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+.input-warp{
+	margin-bottom: 10px;
+}
+.input-tip{
+	float: left;
+	padding: 0 5px;
+	line-height: 28px;
+	color: #666;
+}
+.red{
+	color: #f00;
+}
+.greey{
+	color: #0db143;
+}
+
+
+
+/* 此处样式不需要复制过去只是展示页面效果  */
+.warp{
+	margin: 20px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px #ccc;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+.warp > h2{
+	font: 18px/1.5 '微软雅黑';
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  NO.2  如果用2，1的HTML+CSS可全部删掉*/
+.warp-block{
+}
+.blockinput{
+	position: relative;
+	border: 1px solid #ccc;
+	height: 36px;
+	border-radius: 3px;
+}
+.blockinput > span{
+	position: absolute;
+	left: 0;
+	top: 0;
+	font: 14px/36px '微软雅黑';
+	padding: 0 10px;
+    text-align:justify;
+    text-align-last:justify;
+	width: 100px;
+	color: #666;
+}
+.blockinput p{
+	margin-left: 120px;
+}
+.blockinput p  > input{
+	width: 100%;
+	height: 35px;
+	border: 0;
+	background: #fefefe;
+	font-size: 14px;
+}
+.blockinput > i{
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 36px;
+	padding: 0 5px;
+}
+.blockinput > img{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 36px;
+	width: 80px;
+}
+.blockinput > b{
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	height: 32px;
+	width: 70px;
+	line-height: 32px;
+	background: #f2f2f2;
+	text-align: center;
+	padding: 0 5px;
+	color: #333;
+	cursor: pointer;
+}
+.block-tip{
+	color: #ccc;
+	line-height: 26px;
+}
+.block-tip > i{
+	color: #666;
+	vertical-align: middle;
+	margin-right: 4px;
+	color: #ccc;
+}
+.red > i,
+.red{
+	color: #f00;
+}
+.greey > i,
+.greey{
+	color: #0db143;
+}
+.error{
+	border-color: #f79999 !important;
+	box-shadow: 1px 1px 5px rgba(255,0,0,.2);
+}
+b.greeybg{
+	background: #508de8;
+	color: #fff;
+}
+b.greeybg:hover{
+	background: #75acff;
+}
+
+
+
+
+/* form综合 */
+.m-20-t{
+	margin-top: 20px;
+}
+input[type=text]::-ms-clear{
+    display: none;
+     
+}
+input::-webkit-search-cancel-button{
+    display: none;
+} 
+.error{
+	border-color: #f79999 !important;
+	box-shadow: 1px 1px 5px rgba(255,0,0,.2);
+}
+.form-flex-warp{
+	display: flex;
+}
+.form-flex-warp > .form-flex-box{
+	flex: 1;
+	margin-right: 20px;
+}
+.form-flex-warp > .form-flex-box:nth-last-child(1){
+	margin-right: 0;
+}
+/* input */
+.forminputtext > .forminputtextbox{
+	background: #fff;
+	height: 28px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-right: 20px;
+	padding: 2px 5px;
+}
+.forminputtext > .forminputtextbox > input[type="text"]{
+	width: 100%;
+	background: #fff;
+	height: 25px;
+	border: 0;
+}
+/* select */
+.formselect-main{
+	position: relative;
+}
+.formselect-main > p{	
+	position: relative;
+	background: #fff;
+	height: 28px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 2px 5px;
+	cursor: pointer;
+}
+.formselect-main > p > span{
+	display: block;
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	color: #666;
+}
+.formselect-main > p > i{
+	position: absolute;
+	right: 5px;
+    top: 50%;
+    margin-top: -8px;
+}
+.formselect-main > ul{
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: calc(100% - 2px);
+	background: #fff;
+	border: 1px solid #ccc;
+	border-top: 0;
+	max-height: 150px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.formselect-main > ul > li{
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.formselect-main > ul > li > p{	
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.formselect-main > ul > li:hover{
+	background: #eee;
+}
+/* radio checkbox*/
+.formradiocheckbox{
+	position: relative;
+}
+.formradiocheckbox > span{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.formradiocheckbox > ol{
+	padding-left: 100px; 
+}
+.formradiocheckbox > ol > li{
+	float: left;
+	margin-right: 20px;
+	color: #666;
+	margin-bottom: 5px;
+}
+.formradiocheckbox > ol > li.cur > *{
+	color: #508de8;
+}
+.formradiocheckbox > ol > li > i{
+	margin-right: 4px;	
+    vertical-align: middle;
+}
+/* textarea */
+.formtextareabox{
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+}
+.formtextareabox > textarea{
+	width: 100%;
+	border: 0;
+	background: #fff;
+}

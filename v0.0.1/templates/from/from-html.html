@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<title>FROM表单</title>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=8,9,10">   
+  <link rel="stylesheet" type="text/css" href="../../styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/from-style.css">
+</head>
+<body>
+<form action="">
+	<div class="warp"><!-- 此DIV层可不要 -->
+	  <h2>输入框NO.1</h2><!-- 此H2可不要 -->
+	  <div class="input-warp clrfix">
+	  	<p class="inputtext f_l"><i class="icon iconfont icon-renwode"></i><b><input type="text" placeholder="请输入用户名"></b></p>
+	  	<p class="input-tip red"><i class="icon iconfont icon-quxiao1"></i></p>
+	  </div>
+	  <div class="input-warp clrfix">
+	  	<p class="inputtext f_l"><i class="icon iconfont icon-suo1"></i><b><input type="password" placeholder="请输入密码"></b></p>
+	  	<p class="input-tip red"><i class="icon iconfont icon-quxiao1"></i></p>
+	  </div>
+	  <div class="input-warp picinput clrfix">
+	  	<p class="inputtext f_l"><i class="icon iconfont icon-yanzheng"></i><b><input type="text" placeholder="请输入图片验证码"></b></p>
+	  	<img src="images/pic.png" alt="">
+	  	<p class="input-tip red"><i class="icon iconfont icon-quxiao1"></i></p>
+	  </div>	  
+	  <div class="input-warp clrfix">	  	
+	 	 <p class="inputtext f_l"><i class="icon iconfont icon-weibiaoti202"></i><b><input type="text" placeholder="请输入手机验证码"></b></p>
+	  	<p class="input-tip greey"><i class="icon iconfont icon-queding"></i></p>
+	  </div>
+	</div>
+	<div class="warp"><!-- 此DIV层可不要 -->
+	  <h2>输入框NO.2</h2><!-- 此H2可不要 -->
+	  <div class="warp-block">
+		  <div class="blockinput">
+			<span>用户名</span>
+			<p><input type="text" placeholder="请输入用户名"></p>
+			<i class="icon iconfont icon-queding greey"></i>
+		  </div>
+		  <div class="block-tip"><i class="icon iconfont icon-jianhao"></i><span>支持中文、英文、数字、符合的组合，4-20个字节</span></div>
+	  </div>
+	  <div class="warp-block">
+		  <div class="blockinput">
+			<span>密码</span>
+			<p><input type="text" placeholder="请输入密码"></p>
+			<img src="images/pic.png" alt="">
+		  </div>
+		  <div class="block-tip"><i class="icon iconfont icon-quxiao"></i><span>长度只能在6-20之间</span></div>
+	  </div>
+	  <div class="warp-block">
+		  <div class="blockinput error">
+			<span>图片验证码</span>
+			<p><input type="text" placeholder="请输入手机验证码"></p>
+			<i class="icon iconfont icon-queding greey"></i>
+		  </div>
+		  <div class="block-tip red"><i class="icon iconfont icon-quxiao"></i><span>错误提醒</span></div>
+	  </div>
+	  <div class="warp-block">
+		  <div class="blockinput">
+			<span>手机验证码</span>
+			<p><input type="text" placeholder="请输入手机验证码"></p>
+			<b class="">获取验证码</b>
+			<b class="greeybg">获取验证码</b>
+		  </div>
+		  <div class="block-tip"><i class="icon iconfont icon-jianhao"></i><span>具体格式文字提示</span></div>
+	  </div>
+	</div>
+	<div class="warp"><!-- 此DIV层可不要 -->
+	  <h2>form综合</h2><!-- 此H2可不要 -->
+	  <form action="" method="post">
+		  <!-- input text -->
+		  <div class="form-flex-warp forminputtext">
+				<div class="form-flex-box forminputtextbox error"><input type="text" placeholder="请输入"></div>
+				<div class="form-flex-box forminputtextbox"><input type="text" placeholder="请输入"></div>
+				<div class="form-flex-box forminputtextbox"><input type="text" placeholder="请输入"></div>
+		  </div>
+		  <!-- select -->
+		  <div class="form-flex-warp formselect m-20-t">	
+			  	<div class="form-flex-box formselect-main">
+					<p><span>请选择</span><i class="icon iconfont icon-jiantou-copy1"></i></p>
+					<ul class="hide">
+						<li><p>11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</p></li>
+						<li><p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p></li>
+						<li><p>3333333</p></li>
+						<li><p>4444444444</p></li>
+					</ul>
+			  	</div>		
+			  	<div class="form-flex-box formselect-main">
+					<p><span>请选择</span><i class="icon iconfont icon-jiantou-down"></i></p>
+					<ul class="hide">
+						<li><p>11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</p></li>
+						<li><p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p></li>
+						<li><p>3333333</p></li>
+						<li><p>4444444444</p></li>
+					</ul>
+			  	</div>	
+		  </div>
+		  <!-- radio -->
+		  <div class="form-flex-warp formradiocheck m-20-t">
+				<div class="form-flex-box formradiocheckbox">
+					<span>单选可以放8个字</span>
+					<ol>
+						<li class="cur"><i class="icon iconfont icon-danxuan"></i><label for="">单选1</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选2</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选3</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选4</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选5</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选2</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选3</label></li>
+					</ol>
+			  	</div>
+			  	<div class="form-flex-box formradiocheckbox">
+					<span>单选可以放8个字</span>
+					<ol>
+						<li class="cur"><i class="icon iconfont icon-danxuan"></i><label for="">单选1</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选2</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选3</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选4</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选5</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选2</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选3</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选4</label></li>
+					</ol>
+			  	</div>
+			  	<div class="form-flex-box formradiocheckbox">
+					<span>单选可以放8个字</span>
+					<ol>
+						<li class="cur"><i class="icon iconfont icon-danxuan"></i><label for="">单选1</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选2</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选3</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选4</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选5</label></li>
+					</ol>
+			  	</div>
+			  	<div class="form-flex-box formradiocheckbox">
+					<span>单选可以放8个字</span>
+					<ol>
+						<li class="cur"><i class="icon iconfont icon-danxuan"></i><label for="">单选1</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选2</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选3</label></li>
+						<li><i class="icon iconfont icon-danxuan1"></i><label for="">单选4</label></li>
+					</ol>
+			  	</div>
+		  </div>
+		  <!-- checkbox -->
+		  <div class="form-flex-warp formradiocheck m-20-t">
+				<div class="form-flex-box formradiocheckbox">
+					<span>多选可以放8个字</span>
+					<ol>
+						<li class="cur"><i class="icon iconfont icon-fuxuankuang"></i><label for="">多选1</label></li>
+						<li><i class="icon iconfont icon-checkbox"></i><label for="">多选2</label></li>
+						<li class="cur"><i class="icon iconfont icon-fuxuankuang"></i><label for="">多选3</label></li>
+						<li><i class="icon iconfont icon-checkbox"></i><label for="">多选4</label></li>
+						<li class="cur"><i class="icon iconfont icon-fuxuankuang"></i><label for="">多选5</label></li>
+						<li><i class="icon iconfont icon-checkbox"></i><label for="">多选2</label></li>
+						<li><i class="icon iconfont icon-checkbox"></i><label for="">多选3</label></li>
+					</ol>
+			  	</div>
+			  	<div class="form-flex-box formradiocheckbox">
+					<span>多选可以放8个字</span>
+					<ol>
+						<li class="cur"><i class="icon iconfont icon-fuxuankuang"></i><label for="">多选1</label></li>
+						<li><i class="icon iconfont icon-checkbox"></i><label for="">多选2</label></li>
+						<li><i class="icon iconfont icon-checkbox"></i><label for="">多选3</label></li>
+					</ol>
+			  	</div>
+		  </div>
+		  <!-- textarea -->
+		  <div class="form-flex-warp m-20-t">
+				<div class="form-flex-box formtextareabox">
+					<textarea name="" id="" cols="30" rows="10" placeholder="请输入"></textarea>
+				</div>
+		  </div>
+	  </form>
+	</div>
+
+
+
+</form>
+
+
+</body>
+</html>

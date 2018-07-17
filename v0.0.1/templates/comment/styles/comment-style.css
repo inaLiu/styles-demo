@@ -1,0 +1,140 @@
+@charset "utf-8";
+.comment-warp{
+	position: relative;
+	padding-left: 68px;
+}
+.comment-pic{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px #ccc;
+}
+.comment-pic img{
+	width: 50px;
+}
+.comment-main{
+}
+.comment-uesr{
+	font: 12px/32px '微软雅黑';
+}
+.comment-uesrname{
+	font-size: 13px;
+	color: #379be9;
+	font-weight: bold;
+}
+.comment-time{
+	color: #999;
+	display: inline-block;
+	margin-left: 15px;
+}
+.comment-content{
+	font: 12px/18px '微软雅黑';
+	color: #444;
+	margin-top: 2px;
+	word-wrap: break-word;
+}
+.comment-operate{
+	margin-top: 10px;
+}
+.comment-operate a{
+	display: inline-block;
+	color: #adadad;
+	margin-right: 15px;
+}
+.comment-operate a:hover{
+	color: #379be9;
+}
+.comment-reply{
+	position: relative;
+	border: 3px solid #f0f0f0;
+	margin-top: 8px;
+	padding: 8px 96px 8px 16px;
+	background: #fff;
+}
+.comment-reply-textarea{
+	width: 100%;
+	height: 100%;
+}
+.comment-reply-textarea textarea{
+	width: 100%;
+	height: 50px;
+	border: transparent;
+}
+.comment-reply-btn{
+	position: absolute;
+	right: 0;
+	top: -3px;
+	width: 80px;
+	height: 72px;
+	text-align: center;
+	font: 14px/72px '微软雅黑';
+	color: #fff;
+	background: #379be9;
+}
+.comment-reply-btn:hover{
+	background: #2d96e9;
+}
+.comment-reply-warp{
+	background: #f7f7f7;
+	padding: 8px 16px;
+	margin-top: 10px;
+}
+.comment-reply-title{
+	position: relative;
+	left: -16px;
+	color: #444;
+	height: 36px;
+}
+.comment-reply-title > i{
+	position: absolute;
+	left: 0;
+	top: 10px;
+	border-left: 4px solid #379be9;
+	display: inline-block;
+	background: #f7f7f7;
+	padding: 0 12px;
+}
+.comment-reply-title > p{
+	width: 100%;
+	border-bottom: 1px solid #eee;
+	height: 18px;
+}
+.comment-reply-list{
+	padding: 4px;
+}
+.comment-reply-list:nth-child(even){
+	background: #eee;
+}
+.comment-reply-content{
+	margin-top: 10px;
+	color: #444;
+	font: 14px/24px '微软雅黑';
+	word-wrap:break-word;
+}
+.comment-reply-content span{	
+	font-weight: bold;
+}
+.comment-reply-content span > i{
+	color: #a3a3a3;
+	display: inline-block;
+	margin: 0 4px;
+	font-weight: 600;
+}
+.comment-reply-poerate{
+	margin-top: 10px;
+	color: #adadad;
+}
+.comment-reply-poerate a{	
+	color: #adadad;
+}
+.comment-reply-poerate a:hover{
+	color: #379be9;
+}
+.comment-reply-poerate > i{
+	display: inline-block;
+	margin: 0 4px;
+}

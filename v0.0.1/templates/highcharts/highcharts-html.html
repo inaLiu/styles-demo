@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<title>统计</title>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=8,9,10">   
+  <link rel="stylesheet" type="text/css" href="../../styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/highcharts-style.css">
+
+
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+  <div class="statistics-box">
+    <h1>左右格式</h1>
+    <!-- 此处为复用部分 以上层级可删除 -->
+    <div class="statistics-warp stattwo clrfix">
+      <div class="statistics-l" id="container">
+        <script language="JavaScript">
+          $(document).ready(function() {
+             var title = {
+                text: '统计表名称'   
+             };
+             var subtitle = {
+                text: '统计表名称子名称'
+             };
+             var xAxis = {
+                categories: ['X轴1', 'X轴2', 'X轴3', 'X轴4', 'X轴5', 'X轴6',
+                   'X轴7', 'X轴8', 'X轴9', 'X轴10', 'X轴11', 'X轴12']
+             };
+             var yAxis = {
+                title: {
+                   text: 'Y轴标题'
+                },
+                plotLines: [{
+                   value: 0,
+                   width: 1,
+                   color: '#f00'
+                }]
+             };   
+
+             var tooltip = {
+                valueSuffix: '\xB0C'
+             }
+
+             var legend = {
+              //线条说明默认横向，打开注释为竖向  layout: 'vertical',
+                align: 'center',
+                verticalAlign: 'bottom',
+                borderWidth: 0
+             };
+
+             var series =  [
+                {
+                   name: '标注一',
+                   data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2,
+                      26.5, 23.3, 18.3, 13.9, 9.6]
+                }, 
+                {
+                   name: '标注二',
+                   data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8,
+                      24.1, 20.1, 14.1, 8.6, 2.5]
+                },
+                {
+                   name: '标注三',
+                   data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 
+                      16.6, 14.2, 10.3, 6.6, 4.8]
+                }
+             ];
+
+             var json = {};
+
+             json.title = title;
+             json.subtitle = subtitle;
+             json.xAxis = xAxis;
+             json.yAxis = yAxis;
+             json.tooltip = tooltip;
+             json.legend = legend;
+             json.series = series;
+
+             $('#container').highcharts(json);
+          });
+        </script>
+      </div>
+      <div class="statistics-r" id="container1">
+        <script language="JavaScript">
+          $(document).ready(function() {  
+             var chart = {
+                type: 'column'
+             };
+             var title = {
+                text: '每月平均降雨量'   
+             };
+             var subtitle = {
+                text: 'Source: runoob.com'  
+             };
+             var xAxis = {
+                categories: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+                crosshair: true
+             };
+             var yAxis = {
+                min: 0,
+                title: {
+                   text: '降雨量 (mm)'         
+                }      
+             };
+             var tooltip = {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                   '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+             };
+             var plotOptions = {
+                column: {
+                   pointPadding: 0.2,
+                   borderWidth: 0
+                }
+             };  
+             var credits = {
+                enabled: false
+             };
+             
+             var series= [{
+                  name: 'Tokyo',
+                      data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                  }, {
+                      name: 'New York',
+                      data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                  }, {
+                      name: 'London',
+                      data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                  }, {
+                      name: 'Berlin',
+                      data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+             }];     
+                
+             var json = {};   
+             json.chart = chart; 
+             json.title = title;   
+             json.subtitle = subtitle; 
+             json.tooltip = tooltip;
+             json.xAxis = xAxis;
+             json.yAxis = yAxis;  
+             json.series = series;
+             json.plotOptions = plotOptions;  
+             json.credits = credits;
+             $('#container1').highcharts(json);
+            
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+  <div class="statistics-box">
+    <h1>左中右格式</h1>
+    <!-- 此处为复用部分 以上层级可删除 -->
+    <div class="statistics-warp clrfix">
+      <div class="statistics-l" id="container2">
+        <script language="JavaScript">
+          $(document).ready(function() {  
+             var chart = {
+                 plotBackgroundColor: null,
+                 plotBorderWidth: null,
+                 plotShadow: false
+             };
+             var title = {
+                text: '2014 年各浏览器市场占有比例'   
+             };      
+             var tooltip = {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+             };
+             var plotOptions = {
+                pie: {
+                   allowPointSelect: true,
+                   cursor: 'pointer',
+                   dataLabels: {
+                      enabled: true,
+                      format: '<b>{point.name}%</b>: {point.percentage:.1f} %',
+                      style: {
+                         color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                      }
+                   }
+                }
+             };
+             var series= [{
+                type: 'pie',
+                name: 'Browser share',
+                data: [
+                   ['Firefox',   45.0],
+                   ['IE',       26.8],
+                   {
+                      name: 'Chrome',
+                      y: 12.8,
+                      sliced: true,
+                      selected: true
+                   },
+                   ['Safari',    8.5],
+                   ['Opera',     6.2],
+                   ['Others',   0.7]
+                ]
+             }];     
+                
+             var json = {};   
+             json.chart = chart; 
+             json.title = title;     
+             json.tooltip = tooltip;  
+             json.series = series;
+             json.plotOptions = plotOptions;
+             $('#container2').highcharts(json);  
+          });
+        </script>
+      </div>
+      <div class="statistics-m" id="container3-1">
+        <script language="JavaScript">
+        $(document).ready(function() {   
+           var title = {
+              text: '每月平均温度'   
+           };
+           var subtitle = {
+              text: 'Source: runoob.com'
+           };
+           var xAxis = {
+              categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+           };
+           var yAxis = {
+              title: {
+                 text: 'Temperature (\xB0C)'
+              }
+           };
+           var plotOptions = {
+              line: {
+                 dataLabels: {
+                    enabled: true
+                 },   
+                 enableMouseTracking: false
+              }
+           };
+           var series= [{
+                 name: 'Tokyo',
+                 data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+              }, {
+                 name: 'London',
+                 data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+              }
+           ];
+           
+           var json = {};
+
+           json.title = title;
+           json.subtitle = subtitle;
+           json.xAxis = xAxis;
+           json.yAxis = yAxis;  
+           json.series = series;
+           json.plotOptions = plotOptions;
+           $('#container3-1').highcharts(json);
+          
+        });
+        </script>
+      </div>
+      <div class="statistics-r" id="container4">
+        <script language="JavaScript">
+        $(document).ready(function() {  
+           var chart = {
+              type: 'bar'
+           };
+           var title = {
+              text: 'Historic World Population by Region'   
+           };
+           var subtitle = {
+              text: 'Source: Wikipedia.org'  
+           };
+           var xAxis = {
+              categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+              title: {
+                 text: null
+              }
+           };
+           var yAxis = {
+              min: 0,
+              title: {
+                 text: 'Population (millions)',
+                 align: 'high'
+              },
+              labels: {
+                 overflow: 'justify'
+              }
+           };
+           var tooltip = {
+              valueSuffix: ' millions'
+           };
+           var plotOptions = {
+              bar: {
+                 dataLabels: {
+                    enabled: true
+                 }
+              },
+            series: {
+               stacking: 'normal'
+            }
+           };
+           var legend = {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'top',
+              x: -40,
+              y: 100,
+              floating: true,
+              borderWidth: 1,
+              backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+              shadow: true
+           };
+           var credits = {
+              enabled: false
+           };
+           
+           var series= [{
+                 name: 'Year 1800',
+                    data: [107, 31, 635, 203, 2]
+                }, {
+                    name: 'Year 1900',
+                    data: [133, 156, 947, 408, 6]
+                }, {
+                    name: 'Year 2008',
+                    data: [973, 914, 4054, 732, 34]      
+              }
+           ];     
+              
+           var json = {};   
+           json.chart = chart; 
+           json.title = title;   
+           json.subtitle = subtitle; 
+           json.tooltip = tooltip;
+           json.xAxis = xAxis;
+           json.yAxis = yAxis;  
+           json.series = series;
+           json.plotOptions = plotOptions;
+           json.legend = legend;
+           json.credits = credits;
+           $('#container4').highcharts(json);
+          
+        });
+        </script>
+      </div>
+
+    </div>
+  </div>
+  <div class="statistics-box">
+    <h1>平铺格式</h1>
+    <!-- 此处为复用部分 以上层级可删除 -->
+    <div class="statistics-warp clrfix" id="container5">
+        <script language="JavaScript">
+        $(document).ready(function() {  
+
+           var myWidth = $('#container5').css('width').slice(0,-2);
+               myWidth=Number(myWidth)-25;
+           var chart = {
+              type: 'bar',
+              width:myWidth
+           };
+           var title = {
+              text: 'Historic World Population by Region'   
+           };
+           var subtitle = {
+              text: 'Source: Wikipedia.org'  
+           };
+           var xAxis = {
+              categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+              title: {
+                 text: null
+              }
+           };
+           var yAxis = {
+              min: 0,
+              title: {
+                 text: 'Population (millions)',
+                 align: 'high'
+              },
+              labels: {
+                 overflow: 'justify'
+              }
+           };
+           var tooltip = {
+              valueSuffix: ' millions'
+           };
+           var plotOptions = {
+              bar: {
+                 dataLabels: {
+                    enabled: true
+                 }
+              },
+            series: {
+               stacking: 'normal'
+            }
+           };
+           var legend = {
+              layout: 'vertical',
+              align: 'right',
+              verticalAlign: 'top',
+              x: -40,
+              y: 100,
+              floating: true,
+              borderWidth: 1,
+              backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+              shadow: true
+           };
+           var credits = {
+              enabled: false
+           };
+           
+           var series= [{
+                 name: 'Year 1800',
+                    data: [107, 31, 635, 203, 2]
+                }, {
+                    name: 'Year 1900',
+                    data: [133, 156, 947, 408, 6]
+                }, {
+                    name: 'Year 2008',
+                    data: [973, 914, 4054, 732, 34]      
+              }
+           ];     
+              
+           var json = {};   
+           json.chart = chart; 
+           json.title = title;   
+           json.subtitle = subtitle; 
+           json.tooltip = tooltip;
+           json.xAxis = xAxis;
+           json.yAxis = yAxis;  
+           json.series = series;
+           json.plotOptions = plotOptions;
+           json.legend = legend;
+           json.credits = credits;
+           $('#container5').highcharts(json);
+          
+        });
+        </script>      
+    </div>
+  </div>
+</body>
+</html>    

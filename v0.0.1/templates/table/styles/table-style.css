@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import url(../../../styles/font.css);
+.form-warp table{
+	width: calc(100% - 2px);
+}
+.form-warp table tr:nth-child(odd){
+	background: #EDEDED;
+}
+.form-warp table tr:hover{
+	background: #f1f1f1;
+	cursor: pointer;
+}
+.form-warp table th{
+	font: 14px/1.5 '微软雅黑';
+	text-align: center;
+	padding: 4px;
+	background: #1f87e6;
+	color: #fff;
+}
+.form-warp table td{
+	border: 1px solid #eee;
+	padding: 4px;
+	color: #666;
+}
+.form-warp table td > p{
+	max-width: 200px;
+	min-width: 40px;
+	overflow: hidden;
+	word-break: keep-all;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.form-warp table td > p > a{
+	margin: 0;
+}
+.form-warp table td a{
+	display: inline-block;
+	margin: 0 4px;
+	color: #1568c4;
+}
+.form-warp table td a:hover{
+	color: #1f87e6;
+}

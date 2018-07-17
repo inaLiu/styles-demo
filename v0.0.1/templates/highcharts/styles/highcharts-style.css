@@ -1,0 +1,30 @@
+@charset "utf-8";
+h1{
+	font: 18px/1.8 '微软雅黑';
+	margin-top: 20px;
+	color: #f00;
+}
+.statistics-warp{
+	width: 100%;
+	overflow-x: auto;
+	display: -moz-box;  
+	display: -webkit-box;  
+	display: -o-box;  
+	display: box; 
+}
+ .statistics-warp > div{ 
+	margin-left: 39px;
+	border: 1px solid #ccc; 
+	-webkit-box-flex: 0; 
+}
+ .statistics-warp div:first-child {  
+	margin-left: 0;  
+}  
+.stattwo > div:nth-child(1){
+	width: 48%;
+	float: left;
+}
+.stattwo > div:nth-child(2){
+	width: 48%;
+	float: right;
+}

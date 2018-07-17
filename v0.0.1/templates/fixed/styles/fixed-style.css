@@ -1,0 +1,19 @@
+@charset "utf-8";
+.fixed-warp{
+	position: fixed;
+	left: 50%;
+	margin-left: 600px;
+	bottom: 20px;
+}
+.fixed-warp > *{
+	display: block;
+	background: rgba(45,150,233,.7);
+	font: 14px/60px '微软雅黑';
+	padding: 0 5px;
+	color: #fff;
+	margin-top: 5px;
+	text-align: center;
+}
+.fixed-warp > *:hover{	
+	background: rgba(45,150,233,1);
+}

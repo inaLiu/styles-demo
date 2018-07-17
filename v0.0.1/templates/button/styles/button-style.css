@@ -1,0 +1,47 @@
+@charset "utf-8";
+.butlist{
+	border: 1px solid #ccc;
+	margin: 20px;
+	padding-bottom: 10px;
+}
+.butlist h2{
+	font-size: 18px;
+	margin: 10px;
+}
+/* 默认按钮样式 */
+.g-but a{
+	display: inline-block;
+	margin: 0 10px;
+	background: #1e88e5;
+	padding: 4px 10px;
+	color: #fff;
+	font-size: 14px;
+}
+.g-but a:hover{
+	background: #1565c0;
+}
+/* 圆角 */
+a.but-radius{
+	border-radius: 5px;
+}
+
+/* 按钮方向 */
+.g-rbut{
+	text-align: right;
+}
+.g-cbut{
+	text-align: center;
+}
+/* 按钮背景颜色 */
+.g-colorred-but{
+	background: red !important;
+}
+.g-colorred-but:hover{
+	background: #e20035 !important;
+}
+.g-colorgrey-but{
+	background: grey !important;
+}
+.g-colorgrey-but:hover{
+	background: #a1a1a1 !important;
+}
